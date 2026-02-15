@@ -1,0 +1,162 @@
+{
+  "ethereum-mainnet": {
+    "id": "ethereum-mainnet",
+    "name": "ethereum",
+    "displayName": "Ethereum Mainnet",
+    "chainId": 1,
+    "rpcUrl": "https://eth-mainnet.g.alchemy.com/v2/demo",
+    "explorerUrl": "https://etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "isTestnet": false,
+    "metadata": {
+      "network": "mainnet",
+      "type": "L1"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "polygon-mainnet": {
+    "id": "polygon-mainnet",
+    "name": "polygon",
+    "displayName": "Polygon (Matic)",
+    "chainId": 137,
+    "rpcUrl": "https://polygon-rpc.com",
+    "explorerUrl": "https://polygonscan.com",
+    "nativeCurrency": {
+      "name": "Matic",
+      "symbol": "MATIC",
+      "decimals": 18
+    },
+    "isTestnet": false,
+    "metadata": {
+      "network": "mainnet",
+      "type": "L2"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "arbitrum-mainnet": {
+    "id": "arbitrum-mainnet",
+    "name": "arbitrum",
+    "displayName": "Arbitrum One",
+    "chainId": 42161,
+    "rpcUrl": "https://arb1.arbitrum.io/rpc",
+    "explorerUrl": "https://arbiscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "isTestnet": false,
+    "metadata": {
+      "network": "mainnet",
+      "type": "L2"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "optimism-mainnet": {
+    "id": "optimism-mainnet",
+    "name": "optimism",
+    "displayName": "Optimism",
+    "chainId": 10,
+    "rpcUrl": "https://mainnet.optimism.io",
+    "explorerUrl": "https://optimistic.etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "isTestnet": false,
+    "metadata": {
+      "network": "mainnet",
+      "type": "L2"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "base-mainnet": {
+    "id": "base-mainnet",
+    "name": "base",
+    "displayName": "Base",
+    "chainId": 8453,
+    "rpcUrl": "https://mainnet.base.org",
+    "explorerUrl": "https://basescan.org",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "isTestnet": false,
+    "metadata": {
+      "network": "mainnet",
+      "type": "L2"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "avalanche-mainnet": {
+    "id": "avalanche-mainnet",
+    "name": "avalanche",
+    "displayName": "Avalanche C-Chain",
+    "chainId": 43114,
+    "rpcUrl": "https://api.avax.network/ext/bc/C/rpc",
+    "explorerUrl": "https://snowtrace.io",
+    "nativeCurrency": {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "decimals": 18
+    },
+    "isTestnet": false,
+    "metadata": {
+      "network": "mainnet",
+      "type": "L1"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "sepolia-testnet": {
+    "id": "sepolia-testnet",
+    "name": "ethereum",
+    "displayName": "Ethereum Sepolia Testnet",
+    "chainId": 11155111,
+    "rpcUrl": "https://eth-sepolia.g.alchemy.com/v2/demo",
+    "explorerUrl": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "SEP",
+      "decimals": 18
+    },
+    "isTestnet": true,
+    "metadata": {
+      "network": "testnet",
+      "type": "L1"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "polygon-mumbai": {
+    "id": "polygon-mumbai",
+    "name": "polygon",
+    "displayName": "Polygon Mumbai Testnet",
+    "chainId": 80001,
+    "rpcUrl": "https://rpc-mumbai.maticvigil.com",
+    "explorerUrl": "https://mumbai.polygonscan.com",
+    "nativeCurrency": {
+      "name": "Matic",
+      "symbol": "MATIC",
+      "decimals": 18
+    },
+    "isTestnet": true,
+    "metadata": {
+      "network": "testnet",
+      "type": "L2"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}

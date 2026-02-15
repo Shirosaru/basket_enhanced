@@ -1,0 +1,21 @@
+{
+  "name": "@basket/bank-stablecoin-por-ace-ccip-workflow",
+  "version": "2.1.0",
+  "description": "Enhanced CRE workflow with multi-chain and multi-asset support",
+  "main": "dist/main.js",
+  "private": true,
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@chainlink/cre-sdk": "0.0.8-alpha",
+    "@openzeppelin/contracts": "^5.4.0",
+    "viem": "2.34.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

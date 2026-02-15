@@ -1,0 +1,78 @@
+{
+  "mint-BSKT202602152BAA0474": {
+    "id": "mint-BSKT202602152BAA0474",
+    "basketId": "usdb",
+    "transactionId": "BSKT202602152BAA0474",
+    "beneficiary": "0x0000000000000000000000000000000000000000",
+    "amount": "1000000",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "symbol": "DUSD",
+        "type": "monetary",
+        "amount": "1000000",
+        "contractAddress": "0x6ab7121d7f6d660f6657f67bf5ef17b1cc09a3dd"
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2026-02-15T17:42:28.622Z"
+  },
+  "mint-BSKT202602150C6BBED1": {
+    "id": "mint-BSKT202602150C6BBED1",
+    "basketId": "usdbc",
+    "transactionId": "BSKT202602150C6BBED1",
+    "beneficiary": "0x0000000000000000000000000000000000000000",
+    "amount": "1000000",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "symbol": "DUSD",
+        "type": "monetary",
+        "amount": "1000000",
+        "contractAddress": "0x6ab7121d7f6d660f6657f67bf5ef17b1cc09a3dd"
+      }
+    ],
+    "status": "failed",
+    "createdAt": "2026-02-15T17:43:47.942Z",
+    "error": "spawn cre ENOENT",
+    "completedAt": "2026-02-15T17:43:47.948Z"
+  },
+  "mint-BSKT2026021580AEFE10": {
+    "id": "mint-BSKT2026021580AEFE10",
+    "basketId": "uddbd",
+    "transactionId": "BSKT2026021580AEFE10",
+    "beneficiary": "0x0000000000000000000000000000000000000000",
+    "amount": "1000000",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "symbol": "DUSD",
+        "type": "monetary",
+        "amount": "1000000",
+        "contractAddress": "0x6ab7121d7f6d660f6657f67bf5ef17b1cc09a3dd"
+      }
+    ],
+    "status": "completed",
+    "createdAt": "2026-02-15T17:45:07.627Z",
+    "completedAt": "2026-02-15T17:45:09.132Z"
+  },
+  "mint-BSKT2026021571C9C32E": {
+    "id": "mint-BSKT2026021571C9C32E",
+    "basketId": "usds",
+    "transactionId": "BSKT2026021571C9C32E",
+    "beneficiary": "0x0000000000000000000000000000000000000000",
+    "amount": "1000000",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "symbol": "DUSD",
+        "type": "monetary",
+        "amount": "1000000",
+        "contractAddress": "0x6ab7121d7f6d660f6657f67bf5ef17b1cc09a3dd"
+      }
+    ],
+    "status": "completed",
+    "createdAt": "2026-02-15T19:15:14.757Z",
+    "completedAt": "2026-02-15T19:15:16.258Z"
+  }
+}

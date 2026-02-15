@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - VALID_API_KEYS=${VALID_API_KEYS}
+      - CRE_PROJECT_ROOT=/app
+      - CRE_WORKFLOW_PATH=/app/workflow
+    volumes:
+      - ./backend/data:/app/backend/data
+    restart: unless-stopped
+
+  # Optional: Add blockchain nodes for local development
+  # ethereum-node:
+  #   image: ethereum/client-go:latest
+  #   ports:
+  #     - "8545:8545"
+  #   command: --http --http.addr 0.0.0.0
+  #   volumes:
+  #     - ethereum-data:/data
+
+volumes:
+  ethereum-data:

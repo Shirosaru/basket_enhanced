@@ -1,0 +1,52 @@
+{
+  "messageType": "MT103-MULTI-ASSET",
+  "transactionId": "BSKT20250210ABC123",
+  "sender": {
+    "name": "BSKT Backend",
+    "account": "BSKT001",
+    "bankCode": "BSKTAPI"
+  },
+  "beneficiary": {
+    "name": "Wallet",
+    "account": "0x0000000000000000000000000000000000000001"
+  },
+  "amount": "1000",
+  "assets": [
+    {
+      "assetId": "DUSD",
+      "symbol": "DUSD",
+      "type": "monetary",
+      "amount": "600",
+      "contractAddress": "0x0000000000000000000000000000000000000002",
+      "chainId": "ethereum-mainnet",
+      "metadata": {
+        "currency": "USD"
+      }
+    },
+    {
+      "assetId": "AUDT",
+      "symbol": "AUDT",
+      "type": "monetary",
+      "amount": "400",
+      "contractAddress": "0x0000000000000000000000000000000000000003",
+      "chainId": "ethereum-mainnet",
+      "metadata": {
+        "currency": "AUD"
+      }
+    }
+  ],
+  "chain": {
+    "id": "ethereum-mainnet",
+    "name": "ethereum",
+    "chainId": 1,
+    "rpcUrl": "https://eth-mainnet.g.alchemy.com/v2/YOUR_ALCHEMY_KEY"
+  },
+  "valueDate": "2025-02-10",
+  "bankReference": "0x424534543230323530323130414243313233...",
+  "metadata": {
+    "timestamp": "2025-02-10T12:00:00Z",
+    "basketId": "bUSD",
+    "assetCount": 2,
+    "assetTypes": ["monetary"]
+  }
+}

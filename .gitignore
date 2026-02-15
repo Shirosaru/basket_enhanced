@@ -1,0 +1,54 @@
+node_modules/
+dist/
+out/
+.env
+.env.local
+.env.*.local
+backend/.env
+backend/.env.local
+backend/.env.*.local
+contracts/.env
+contracts/.env.local
+contracts/.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+workflow/.env
+workflow/.env.local
+workflow/.env.*.local
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.log
+.basket-enhanced/
+.foundry/
+lib/
+cache/
+broadcast/
+
+# Documentation & Reports
+docs/
+DEMO.md
+SECURITY_CHECKLIST.md
+
+# Sensitive files
+.vault/
+secrets/
+credentials/
+
+# Build outputs
+build/
+artifacts/
+*.tsbuildinfo
+
+# OS files
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# IDE
+*.iml
+.gradle/

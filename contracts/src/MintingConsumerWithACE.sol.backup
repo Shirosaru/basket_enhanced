@@ -1,0 +1,89 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+
+/**
+ * @title MintingConsumerWithACE
+ * @notice Consumes ACE attestations to mint stablecoins
+ * @dev Integrates with Chainlink's ACE (Actionable Cryptographic Events)
+ */
+contract MintingConsumerWithACE is Ownable {
+    ERC20 public stablecoin;
+    address public policyEngine;
+    address public expectedAuthor;
+    bytes10 public expectedWorkflowName;
+
+    event MintRequested(address indexed beneficiary, uint256 amount, string transactionId);
+    event MintExecuted(address indexed beneficiary, uint256 amount, bytes32 attestationId);
+
+    error InvalidPayload();
+    error InsufficientRole();
+
+    constructor() Ownable(msg.sender) {}
+
+    /**
+     * @notice Initialize the minting consumer (called via proxy)
+     */
+    function initialize(
+        address initialOwner,
+        address _stablecoin,
+        address _policyEngine,
+        address _expectedAuthor,
+        bytes10 _expectedWorkflowName
+    ) external initializer {
+        _transferOwnership(initialOwner);
+        stablecoin = ERC20(_stablecoin);
+        policyEngine = _policyEngine;
+        expectedAuthor = _expectedAuthor;
+        expectedWorkflowName = _expectedWorkflowName;
+    }
+
+    /**
+     * @notice Request a mint through ACE
+     * @param beneficiary Recipient of minted tokens
+     * @param amount Amount to mint (in smallest unit)
+     * @param transactionId Unique transaction identifier
+     */
+    function requestMint(
+        address beneficiary,
+        uint256 amount,
+        string calldata transactionId
+    ) external onlyOwner {
+        if (beneficiary == address(0)) revert InvalidPayload();
+        emit MintRequested(beneficiary, amount, transactionId);
+    }
+
+    /**
+     * @notice Execute mint after ACE attestation verification
+     * @param beneficiary Recipient of minted tokens
+     * @param amount Amount to mint
+     * @param attestationId ACE attestation ID
+     */
+    function executeMint(
+        address beneficiary,
+        uint256 amount,
+        bytes32 attestationId
+    ) external onlyOwner {
+        if (beneficiary == address(0)) revert InvalidPayload();
+        // In production, verify attestation with ACE here
+        // For now, directly mint
+        StablecoinERC20(address(stablecoin)).mint(beneficiary, amount);
+        emit MintExecuted(beneficiary, amount, attestationId);
+    }
+
+    /**
+     * @notice Burn tokens (if owner has burn role)
+     */
+    function burn(address from, uint256 amount) external onlyOwner {
+        StablecoinERC20(address(stablecoin)).burn(from, amount);
+    }
+}
+
+/**
+ * @notice Simple initializer modifier (in production, use OpenZeppelin's Initializable)
+ */
+modifier initializer() {
+    _;
+}

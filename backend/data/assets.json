@@ -1,0 +1,47 @@
+{
+  "AUDT": {
+    "id": "AUDT",
+    "name": "Australian Dollar Token",
+    "symbol": "AUDT",
+    "type": "monetary",
+    "decimals": 6,
+    "contractAddress": "0x61E66d95527bb5BFC4218ef07f9F3356F6c73226",
+    "metadata": {
+      "currency": "AUD",
+      "issuer": "Bank",
+      "region": "APAC"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "DUSD": {
+    "id": "DUSD",
+    "name": "Demo USD",
+    "symbol": "DUSD",
+    "type": "monetary",
+    "decimals": 6,
+    "contractAddress": "0x6ab7121d7f6d660f6657f67bf5ef17b1cc09a3dd",
+    "metadata": {
+      "currency": "USD",
+      "issuer": "Demo Bank",
+      "region": "Global"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "LBBT": {
+    "id": "LBBT",
+    "name": "Labubu Token",
+    "symbol": "LBBT",
+    "type": "nft",
+    "decimals": 0,
+    "contractAddress": "0xCFeB5C405d9969eE3922215B8A094b758AE00702",
+    "metadata": {
+      "tokenStandard": "ERC721",
+      "collection": "Labubu",
+      "issuer": "Pop Mart"
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}

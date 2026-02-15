@@ -1,0 +1,11 @@
+// Ignored files
+node_modules/
+.next/
+dist/
+build/
+*.log
+.env.local
+.env.*.local
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,42 @@
+staging-settings:
+  triggers:
+    - name: http_trigger
+      type: http
+      config:
+        port: 3000
+
+  nodes:
+    - name: parse_http_request
+      type: observer
+      triggers:
+        - http_trigger
+      config:
+        handler: onHTTPRequest
+
+    - name: verify_por
+      type: observer
+      depends_on:
+        - parse_http_request
+      config:
+        handler: onVerifyPOR
+
+    - name: ace_trigger
+      type: observer
+      depends_on:
+        - verify_por
+      config:
+        handler: onACETrigger
+
+    - name: execute_mint
+      type: transaction
+      depends_on:
+        - ace_trigger
+      config:
+        handler: onMintRequest
+
+    - name: process_ccip
+      type: observer
+      depends_on:
+        - execute_mint
+      config:
+        handler: onCCIPMessage

@@ -1,0 +1,38 @@
+{
+  "staging-settings": {
+    "chains": {
+      "ethereum-mainnet": {
+        "rpcUrl": "${ETH_RPC_URL}",
+        "stablecoinAddress": "${STABLECOIN_ADDRESS_ETH}",
+        "mintingConsumerAddress": "${MINTING_CONSUMER_ADDRESS_ETH}",
+        "chainId": 1
+      },
+      "polygon-mainnet": {
+        "rpcUrl": "${POLYGON_RPC_URL}",
+        "stablecoinAddress": "${STABLECOIN_ADDRESS_POLYGON}",
+        "mintingConsumerAddress": "${MINTING_CONSUMER_ADDRESS_POLYGON}",
+        "chainId": 137
+      },
+      "arbitrum-mainnet": {
+        "rpcUrl": "${ARBITRUM_RPC_URL}",
+        "stablecoinAddress": "${STABLECOIN_ADDRESS_ARBITRUM}",
+        "mintingConsumerAddress": "${MINTING_CONSUMER_ADDRESS_ARBITRUM}",
+        "chainId": 42161
+      }
+    },
+    "porApiUrl": "${POR_API_URL_STAGING}",
+    "decimals": 6
+  },
+  "production-settings": {
+    "chains": {
+      "ethereum-mainnet": {
+        "rpcUrl": "${ETH_RPC_URL}",
+        "stablecoinAddress": "${STABLECOIN_ADDRESS_ETH}",
+        "mintingConsumerAddress": "${MINTING_CONSUMER_ADDRESS_ETH}",
+        "chainId": 1
+      }
+    },
+    "porApiUrl": "${POR_API_URL_PRODUCTION}",
+    "decimals": 6
+  }
+}

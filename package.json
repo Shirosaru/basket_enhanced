@@ -1,0 +1,51 @@
+{
+  "name": "basket-enhanced",
+  "version": "2.1.0",
+  "description": "Complete DeFi basket minting system with multi-chain, multi-asset, and real-time tracking",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "contracts",
+    "workflow",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=backend && npm install --workspace=contracts && npm install --workspace=workflow && npm install --workspace=frontend",
+    "dev": "npm run dev --workspace=frontend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:workflow": "npm run dev --workspace=workflow",
+    "dev:all": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:workflow": "npm run build --workspace=workflow",
+    "build:contracts": "npm run build --workspace=contracts",
+    "test": "npm run test --workspace=backend",
+    "test:backend": "npm run test --workspace=backend",
+    "start": "npm start --workspace=frontend",
+    "start:backend": "npm start --workspace=backend",
+    "contracts:build": "cd contracts && forge build",
+    "contracts:deploy": "cd contracts && forge script script/DeployBasketFactory.s.sol --broadcast",
+    "contracts:test": "cd contracts && forge test",
+    "lint": "npm run lint --workspace=backend && npm run lint --workspace=frontend",
+    "type-check": "npm run type-check --workspace=frontend",
+    "setup": "npm run install:all && npm run contracts:build && npm run build"
+  },
+  "keywords": [
+    "defi",
+    "basket",
+    "stablecoin",
+    "multi-chain",
+    "minting",
+    "ace",
+    "ccip",
+    "chainlink"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "concurrently": "^8.2.2"
+  }
+}

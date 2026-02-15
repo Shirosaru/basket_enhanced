@@ -1,0 +1,108 @@
+{
+  "bUSD": {
+    "id": "bUSD",
+    "name": "Basket USD",
+    "symbol": "bUSD",
+    "description": "Basket containing USD stablecoins",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 60,
+        "proportion": "60%"
+      },
+      {
+        "assetId": "AUDT",
+        "weight": 40,
+        "proportion": "40%"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "mixed-basket": {
+    "id": "mixed-basket",
+    "name": "Mixed Asset Basket",
+    "symbol": "MIXD",
+    "description": "Basket with both monetary and digital assets",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 70,
+        "proportion": "70%"
+      },
+      {
+        "assetId": "LBBT",
+        "weight": 30,
+        "proportion": "30%"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "usdb": {
+    "id": "usdb",
+    "name": "USD Basket",
+    "symbol": "USDB",
+    "description": "Basket containing 1 assets",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 100,
+        "proportion": "1"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2026-02-15T17:42:27.577Z",
+    "updatedAt": "2026-02-15T17:42:27.577Z"
+  },
+  "usdbc": {
+    "id": "usdbc",
+    "name": "USD Basket",
+    "symbol": "USDBC",
+    "description": "Basket containing 1 assets",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 100,
+        "proportion": "1"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2026-02-15T17:43:46.740Z",
+    "updatedAt": "2026-02-15T17:43:46.740Z"
+  },
+  "uddbd": {
+    "id": "uddbd",
+    "name": "USD Basket",
+    "symbol": "UDDBD",
+    "description": "Basket containing 1 assets",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 100,
+        "proportion": "1"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2026-02-15T17:45:06.228Z",
+    "updatedAt": "2026-02-15T17:45:06.228Z"
+  },
+  "usds": {
+    "id": "usds",
+    "name": "USD Basket",
+    "symbol": "USDS",
+    "description": "Basket containing 1 assets",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 100,
+        "proportion": "1"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2026-02-15T19:15:13.661Z",
+    "updatedAt": "2026-02-15T19:15:13.661Z"
+  }
+}

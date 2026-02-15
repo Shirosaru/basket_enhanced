@@ -1,0 +1,103 @@
+{
+  "DUSD": {
+    "id": "DUSD",
+    "type": "monetary",
+    "name": "Demo USD",
+    "symbol": "DUSD",
+    "defaultChain": "ethereum-mainnet",
+    "chains": {
+      "ethereum-mainnet": {
+        "contractAddress": "0x6ab7121d7f6d660f6657f67bf5ef17b1cc09a3dd",
+        "decimals": 6,
+        "metadata": {
+          "currency": "USD",
+          "issuer": "Demo Bank"
+        }
+      },
+      "polygon-mainnet": {
+        "contractAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+        "decimals": 6,
+        "metadata": {
+          "currency": "USD",
+          "issuer": "Demo Bank"
+        }
+      },
+      "arbitrum-mainnet": {
+        "contractAddress": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5F86",
+        "decimals": 6,
+        "metadata": {
+          "currency": "USD",
+          "issuer": "Demo Bank"
+        }
+      }
+    },
+    "metadata": {
+      "symbol": "DUSD",
+      "multiChain": true
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "AUDT": {
+    "id": "AUDT",
+    "type": "monetary",
+    "name": "Australian Dollar Token",
+    "symbol": "AUDT",
+    "defaultChain": "ethereum-mainnet",
+    "chains": {
+      "ethereum-mainnet": {
+        "contractAddress": "0x61E66d95527bb5BFC4218ef07f9F3356F6c73226",
+        "decimals": 6,
+        "metadata": {
+          "currency": "AUD",
+          "issuer": "Bank"
+        }
+      },
+      "polygon-mainnet": {
+        "contractAddress": "0x61E66d95527bb5BFC4218ef07f9F3356F6c73226",
+        "decimals": 6,
+        "metadata": {
+          "currency": "AUD",
+          "issuer": "Bank"
+        }
+      }
+    },
+    "metadata": {
+      "symbol": "AUDT",
+      "multiChain": true
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "LBBT": {
+    "id": "LBBT",
+    "type": "nft",
+    "name": "Labubu Token",
+    "symbol": "LBBT",
+    "defaultChain": "ethereum-mainnet",
+    "chains": {
+      "ethereum-mainnet": {
+        "contractAddress": "0xCFeB5C405d9969eE3922215B8A094b758AE00702",
+        "decimals": 0,
+        "metadata": {
+          "tokenStandard": "ERC721",
+          "collection": "Labubu"
+        }
+      },
+      "polygon-mainnet": {
+        "contractAddress": "0xCFeB5C405d9969eE3922215B8A094b758AE00702",
+        "decimals": 0,
+        "metadata": {
+          "tokenStandard": "ERC721",
+          "collection": "Labubu"
+        }
+      }
+    },
+    "metadata": {
+      "symbol": "LBBT",
+      "multiChain": true
+    },
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}

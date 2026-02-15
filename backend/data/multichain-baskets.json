@@ -1,0 +1,48 @@
+{
+  "bUSD": {
+    "id": "bUSD",
+    "name": "Basket USD",
+    "symbol": "bUSD",
+    "description": "Multi-chain basket with USD stablecoins",
+    "supportedChains": ["ethereum-mainnet", "polygon-mainnet", "arbitrum-mainnet"],
+    "defaultChain": "ethereum-mainnet",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 60,
+        "proportion": "60%"
+      },
+      {
+        "assetId": "AUDT",
+        "weight": 40,
+        "proportion": "40%"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  "mixed-basket": {
+    "id": "mixed-basket",
+    "name": "Mixed Asset Basket",
+    "symbol": "MIXD",
+    "description": "Cross-chain basket with monetary + NFT assets",
+    "supportedChains": ["ethereum-mainnet", "polygon-mainnet"],
+    "defaultChain": "ethereum-mainnet",
+    "assets": [
+      {
+        "assetId": "DUSD",
+        "weight": 70,
+        "proportion": "70%"
+      },
+      {
+        "assetId": "LBBT",
+        "weight": 30,
+        "proportion": "30%"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}
